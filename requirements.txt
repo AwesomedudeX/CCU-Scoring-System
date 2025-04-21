@@ -1,6 +1,7 @@
-streamlit
 numpy
 pandas
 matplotlib
 seaborn
 statsmodels
+joblib
+scikit-learn
