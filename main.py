@@ -82,7 +82,7 @@ for i in range(ccuquantity):
 
 st.expander("Input Values Preview").dataframe(xpred, hide_index=False, use_container_width=True)
 
-if st.button("Predict"):
+if st.button("Generate Scores"):
     
     pred = lr.predict(xpred)
     predict = {}
@@ -99,4 +99,4 @@ if st.button("Predict"):
         st.subheader("CCU Scores:")
 
         for ccu in predict:
-            st.write(f"**CCU {ccu+1}:** {predict[ccu]} - ***{scores[predict[ccu]]}***")
+            st.write(f"**CCU {ccu+1}:** `{predict[ccu]}` - ***{scores[predict[ccu]]}***")
